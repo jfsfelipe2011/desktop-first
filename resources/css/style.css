@@ -240,3 +240,124 @@ h2:after {
 .section-features .long-copy {
     margin-bottom: 30px;
 }
+
+.images-showcase {
+    list-style: none;
+    width: 100%;
+}
+
+.images-showcase li{
+    display: block;
+    float: left;
+    width: 25%;
+    height: 200px;
+}
+
+.photo {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: #000;
+}
+
+.photo img {
+    opacity: 0.7;
+    width: 100%;
+    height: auto;
+    transform: scale(1.15);
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+.section-photos {
+    padding: 0;
+}
+
+.photo img:hover {
+    opacity:1;
+    transform: scale(1.03);
+}
+
+.section-plans {
+    background-color: #f4f4f4;
+}
+
+.plans-box {
+    margin-top: 30px;
+}
+
+.plans-box:first-child {
+    padding-right: 2%;
+}
+
+.plans-box:last-child {
+    padding-left: 2%;
+}
+
+.app-screen {
+    margin-top: 40%;
+    width: 100%;
+}
+
+.columns {
+    float: left;
+    width: 25%;
+    padding: 8px;
+}
+
+.price {
+    list-style-type: none;
+    border: 1px solid #eee;
+    margin: 0;
+    padding: 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.price:hover {
+    box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+}
+
+.price .header {
+    background-color: #111;
+    color: white;
+    font-size: 25px;
+}
+
+.price li {
+    border-bottom: 1px solid #eee;
+    padding: 20px;
+    text-align: center;
+}
+
+.price .grey {
+    background-color: #eee;
+    font-size: 20px;
+}
+
+.price .green {
+    background-color: #009688;
+}
+
+.button {
+    background-color: #009688;
+    border: none;
+    border-radius: 3px;
+    color: #FFFFFF;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.clearfix {
+    zoom:1;
+}
+
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height:0;
+    visibility:hidden;
+}
