@@ -361,3 +361,12 @@ h2:after {
     height:0;
     visibility:hidden;
 }
+
+.box img {
+    width: 100%;
+    height: 80%;
+}
+
+.box a {
+    outline:none
+}
