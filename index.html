@@ -9,6 +9,7 @@
         <meta name="description" content="Esse site é de uma hospedagem de sites, com temática nerd e geek" />
         <meta name="keywords" content="Nerds, Geek, Hospedagem, Sites" />
         <meta name="author" content="jfsfelipe2011@gmail.com" />
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
 
         <!-- Importação do normalize css para arrumar bugs -->
         <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
@@ -16,13 +17,15 @@
         <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
         <!-- Importação do nossa folha de estilo -->
         <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+        <!-- Importação do nossa folha de estilo de media queries -->
+        <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
         <!-- Importação da fonte Lato -->
         <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400&amp;subset=latin-ext" rel="stylesheet">
         <!-- Importação de Fonte Awesone para links -->
         <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
         <title>Nerds Desenvolvimento</title>
     </head>
-    <body>
+    <body class="js--section-home">
         <header>
             <nav>
                 <div class="row">
@@ -34,22 +37,24 @@
                             <span>NERDS DEV</span>
                         </a>
                     </div>
-                    <ul class="main-nav">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Serviços</a></li>
-                        <li><a href="#">Galeria</a></li>
-                        <li><a href="#">Planos</a></li>
-                        <li><a href="#">Depoimentos</a></li>
+                    <ul class="main-nav js--main-nav">
+                        <li><a href="#" class="js--scroll-to-home">Home</a></li>
+                        <li><a href="#" class="js--scroll-to-features">Serviços</a></li>
+                        <li><a href="#" class="js--scroll-to-photos">Galeria</a></li>
+                        <li><a href="#" class="js--scroll-to-plans">Planos</a></li>
+                        <li><a href="#" class="js--scroll-to-testimonials">Depoimentos</a></li>
                     </ul>
+
+                    <a class="mobile-nav-icon js--nav-icon"><i class="ion-navicon-round"></i></a>
                 </div>
             </nav>
             <div class="hero-text-box">
                <h1>Meu nome é Nerd, <span>Nerds Devs.</span> <br> Nerds com permissão 777 para desenvolver.</h1>
-               <a class="btn btn-full" href="#">conheça</a>
+               <a class="btn btn-full js--scroll-to-features" href="#">conheça</a>
             </div>
         </header>
 
-        <section class="section-features">
+        <section class="section-features js--section-features">
             <div class="row">
                 <h2>Soluções inteligentes &mdash; para os seu negócio ir ao infinito e além!!</h2>
                 <p class="long-copy">
@@ -97,7 +102,7 @@
             </div>
         </section>
 
-        <section class="section-photos">
+        <section class="section-photos js--section-photos">
             <ul class="images-showcase clearfix">
                 <li>
                     <figure class="photo">
@@ -144,7 +149,7 @@
             </ul>
         </section>
 
-        <section class="section-plans">
+        <section class="section-plans js--section-plans">
             <div class="row">
                 <h2>Confira nossos planos</h2>
 
@@ -205,7 +210,7 @@
                 </div>
             </div>
         </section>
-        <section class="section-partners">
+        <section class="section-partners js--section-partners">
             <div class="row">
                 <h2>Mais que clientes, parceiros na luta contra o império...</h2>
             </div>
@@ -254,7 +259,7 @@
                 </div>
             </div>
         </section>
-        <section class="section-testimonials">
+        <section class="section-testimonials js--section-testimonials">
             <div class="row">
                 <h2>Salvando pessoas em apuros...</h2>
             </div>
@@ -315,4 +320,7 @@
         </footer>
     </body>
 </html>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 <script src="https://unpkg.com/ionicons@4.2.2/dist/ionicons.js"></script>
+<script src="vendors/js/waypoint/lib/jquery.waypoints.min.js"></script>
+<script src="resources/js/script.js"></script>

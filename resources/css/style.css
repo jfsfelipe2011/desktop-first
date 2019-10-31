@@ -36,10 +36,10 @@ h1 {
 
 .hero-text-box {
     position: absolute;
-    width: 930px;
-    top: 65%;
+    width: 1140px;
+    top: 50%;
     left: 50%;
-    transform: translate(-45%, -50%);
+    transform: translate(-50%, -50%);
 }
 
 .hero-text-box h1 {
@@ -479,4 +479,43 @@ footer p {
     color: #888;
     text-align: center;
     margin-top: 20px;
+}
+
+.sticky{
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    background-color: #111111;
+    box-shadow: 0 2px 2px #efefef;
+    z-index: 9999;
+}
+
+.sticky .main-nav {
+    margin-top: 18px;
+}
+
+.sticky .logo {
+    height: 50px;
+    width: auto;
+    float: left;
+    margin: 5px 0;
+}
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited {
+    padding: 16px 0;
+    color: #555;
+}
+
+.mobile-nav-icon{
+    float:right;
+    margin-top: 30px;
+    cursor:pointer;
+    display:none;
+}
+
+.mobile-nav-icon i{
+    font-size: 200%;
+    color: #fff;
 }
